@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .border {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+        }
+
+        .round {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Borders</h2>
+    <p>Use the border classes to add or remove borders from an element:</p>
+    <span class="border"></span>
+    <span class="border border-0"></span>
+    <span class="border border-top-0"></span>
+    <span class="border border-right-0"></span>
+    <span class="border border-bottom-0"></span>
+    <span class="border border-left-0"></span>
+</div>
+
+<div class="container">
+    <h2>Borders</h2>
+    <p>Use a contextual border color to add a color to the border:</p>
+    <span class="border border-primary"></span>
+    <span class="border border-secondary"></span>
+    <span class="border border-success"></span>
+    <span class="border border-danger"></span>
+    <span class="border border-warning"></span>
+    <span class="border border-info"></span>
+    <span class="border border-light"></span>
+    <span class="border border-dark"></span>
+    <span class="border border-white"></span>
+</div>
+
+<div class="container">
+    <h2>Borders</h2>
+    <p>Round the corner of an element with the rounded classes:</p>
+    <span class="rounded-sm round"></span>
+    <span class="rounded round"></span>
+    <span class="rounded-lg round"></span>
+    <span class="rounded-top round"></span>
+    <span class="rounded-right round"></span>
+    <span class="rounded-bottom round"></span>
+    <span class="rounded-left round"></span>
+    <span class="rounded-circle round"></span>
+    <span class="rounded-0 round"></span>
+</div>
+
+
+<div class="container">
+    <h2>Float</h2>
+    <p>Float an element to the right with the .float-right class or to the left with .float-left, and clear floats with the .clearfix class.</p>
+    <div class="clearfix">
+        <span class="float-left">Float left</span>
+        <span class="float-right">Float right</span>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Responsive Floats</h2>
+    <p>Float an element to the left or to the right depending on screen width, with the responsive float classes .float-*-left|right (where * is sm, md, lg or xl).</p>
+    <p>Resize the browser window to see the effect.</p>
+    <div class="clearfix">
+        <div class="float-sm-right">Float right on small screens or wider</div><br>
+        <div class="float-md-right">Float right on medium screens or wider</div><br>
+        <div class="float-lg-right">Float right on large screens or wider</div><br>
+        <div class="float-xl-right">Float right on extra large screens or wider</div><br>
+        <div class="float-none">Float none</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Horizontal Centering</h1>
+    <p>Center an element with the .mx-auto class:</p>
+    <div class="mx-auto bg-warning" style="width:150px">Centered</div>
+</div>
+
+<div class="container">
+    <h1>Width Utilities</h1>
+    <p>Set the width of an element with the w-* classes:</p>
+    <div class="w-25 bg-warning">Width 25%</div>
+    <div class="w-50 bg-warning">Width 50%</div>
+    <div class="w-75 bg-warning">Width 75%</div>
+    <div class="w-100 bg-warning">Width 100%</div>
+    <div class="mw-100 bg-warning">Max Width 100%</div>
+</div>
+
+<div class="container">
+    <h1>Height Utilities</h1>
+    <p>Set the height of an element with the w-* classes:</p>
+    <div style="height:200px;background-color:#ddd">
+        <div class="h-25 d-inline-block p-2 bg-warning">Height 25%</div>
+        <div class="h-50 d-inline-block p-2 bg-warning">Height 50%</div>
+        <div class="h-75 d-inline-block p-2 bg-warning">Height 75%</div>
+        <div class="h-100 d-inline-block p-2 bg-warning">Height 100%</div>
+        <div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px">Max Height 100%</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Spacing Utilities</h1>
+    <p>Set the spacing of an element with the {property}{sides}-{breakpoint}-{size} classes. Omit breakpoint if you want the padding or margin to work on all screen sizes.</p>
+    <div class="pt-4 bg-warning">I only have a top padding (1.5rem = 24px)</div>
+    <div class="p-5 bg-success">I have a padding on all sides (3rem = 48px)</div>
+    <div class="m-5 pb-5 bg-info">I have a margin on all sides (3rem = 48px) and a bottom padding (3rem = 48px)</div>
+</div>
+
+<div class="container">
+    <h1>Margin Top Utilities</h1>
+    <p>Margin Top utilities:</p>
+    <div class="mt-0 bg-warning">Margin Top 0</div>
+    <div class="mt-1 bg-warning">Margin Top 1</div>
+    <div class="mt-2 bg-warning">Margin Top 2</div>
+    <div class="mt-3 bg-warning">Margin Top 3</div>
+    <div class="mt-4 bg-warning">Margin Top 4</div>
+    <div class="mt-5 bg-warning">Margin Top 5</div>
+    <div class="mt-auto bg-warning" style="width:150px">Margin Top Auto</div>
+    <br>
+
+    <p>Responsive margin top utilities. Resize the browser window to see the effect:</p>
+    <div class="mt-sm-5 bg-warning">Margin Top 5 on SM screens</div>
+    <div class="mt-md-5 bg-warning">Margin Top 5 on MD screens</div>
+    <div class="mt-lg-5 bg-warning">Margin Top 5 on LG screens</div>
+    <div class="mt-xl-5 bg-warning">Margin Top 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Margin Bottom Utilities</h1>
+    <p>Margin Bottom utilities:</p>
+    <div class="mb-0 bg-warning">Margin Bottom 0</div>
+    <div class="mb-1 bg-warning">Margin Bottom 1</div>
+    <div class="mb-2 bg-warning">Margin Bottom 2</div>
+    <div class="mb-3 bg-warning">Margin Bottom 3</div>
+    <div class="mb-4 bg-warning">Margin Bottom 4</div>
+    <div class="mb-5 bg-warning">Margin Bottom 5</div>
+    <div class="mb-auto bg-warning" style="width:150px">Margin Bottom Auto</div>
+    <br>
+
+    <p>Responsive margin bottom utilities. Resize the browser window to see the effect:</p>
+    <div class="mb-sm-5 bg-warning">Margin Bottom 5 on SM screens</div>
+    <div class="mb-md-5 bg-warning">Margin Bottom 5 on MD screens</div>
+    <div class="mb-lg-5 bg-warning">Margin Bottom 5 on LG screens</div>
+    <div class="mb-xl-5 bg-warning">Margin Bottom 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Margin Left Utilities</h1>
+    <p>Margin Left utilities:</p>
+    <div class="ml-0 bg-warning">Margin Left 0</div>
+    <div class="ml-1 bg-warning">Margin Left 1</div>
+    <div class="ml-2 bg-warning">Margin Left 2</div>
+    <div class="ml-3 bg-warning">Margin Left 3</div>
+    <div class="ml-4 bg-warning">Margin Left 4</div>
+    <div class="ml-5 bg-warning">Margin Left 5</div>
+    <div class="ml-auto bg-warning" style="width:150px">Margin Left Auto</div>
+
+    <p>Responsive margin left utilities. Resize the browser window to see the effect:</p>
+    <div class="ml-sm-5 bg-warning">Margin Left 5 on SM screens</div>
+    <div class="ml-md-5 bg-warning">Margin Left 5 on MD screens</div>
+    <div class="ml-lg-5 bg-warning">Margin Left 5 on LG screens</div>
+    <div class="ml-xl-5 bg-warning">Margin Left 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Margin Right Utilities</h1>
+    <p>Margin Right utilities:</p>
+    <div class="mr-0 bg-warning">Margin Right 0</div>
+    <div class="mr-1 bg-warning">Margin Right 1</div>
+    <div class="mr-2 bg-warning">Margin Right 2</div>
+    <div class="mr-3 bg-warning">Margin Right 3</div>
+    <div class="mr-4 bg-warning">Margin Right 4</div>
+    <div class="mr-5 bg-warning">Margin Right 5</div>
+    <div class="mr-auto bg-warning" style="width:150px">Margin Right Auto</div>
+    <br>
+
+    <p>Responsive margin left utilities. Resize the browser window to see the effect:</p>
+    <div class="mr-sm-5 bg-warning">Margin Right on SM screens</div>
+    <div class="mr-md-5 bg-warning">Margin Right on MD screens</div>
+    <div class="mr-lg-5 bg-warning">Margin Right on LG screens</div>
+    <div class="mr-xl-5 bg-warning">Margin Right on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Margin Left and Right Utilities</h1>
+    <p>Margin X utilities:</p>
+    <div class="mx-0 bg-warning">Margin X 0</div>
+    <div class="mx-1 bg-warning">Margin X 1</div>
+    <div class="mx-2 bg-warning">Margin X 2</div>
+    <div class="mx-3 bg-warning">Margin X 3</div>
+    <div class="mx-4 bg-warning">Margin X 4</div>
+    <div class="mx-5 bg-warning">Margin X 5</div>
+    <div class="mx-auto bg-warning" style="width:150px">Margin X Auto</div>
+    <br>
+
+    <p>Responsive margin x utilities. Resize the browser window to see the effect:</p>
+    <div class="mx-sm-5 bg-warning">Margin X 5 on SM screens</div>
+    <div class="mx-md-5 bg-warning">Margin X 5 on MD screens</div>
+    <div class="mx-lg-5 bg-warning">Margin X 5 on LG screens</div>
+    <div class="mx-xl-5 bg-warning">Margin X 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Margin Top and Bottom Utilities</h1>
+    <p>Margin Y utilities:</p>
+    <div class="my-0 bg-warning">Margin Y 0</div>
+    <div class="my-1 bg-warning">Margin Y 1</div>
+    <div class="my-2 bg-warning">Margin Y 2</div>
+    <div class="my-3 bg-warning">Margin Y 3</div>
+    <div class="my-4 bg-warning">Margin Y 4</div>
+    <div class="my-5 bg-warning">Margin Y 5</div>
+    <div class="my-auto bg-warning">Margin Y Auto</div>
+    <br>
+
+    <p>Responsive margin y utilities. Resize the browser window to see the effect:</p>
+    <div class="my-sm-5 bg-warning">Margin Y 5 on SM screens</div>
+    <div class="my-md-5 bg-warning">Margin Y 5 on MD screens</div>
+    <div class="my-lg-5 bg-warning">Margin Y 5 on LG screens</div>
+    <div class="my-xl-5 bg-warning">Margin Y 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Padding Utilities</h1>
+    <p>Padding utilities:</p>
+    <div class="p-0 bg-warning">Padding 0</div>
+    <div class="p-1 bg-success">Padding 1</div>
+    <div class="p-2 bg-danger">Padding 2</div>
+    <div class="p-3 bg-primary">Padding 3</div>
+    <div class="p-4 bg-light">Padding 4</div>
+    <div class="p-5 bg-info">Padding 5</div>
+    <br>
+
+    <p>Responsive padding utilities. Resize the browser window to see the effect:</p>
+    <div class="p-sm-5 bg-warning">Padding 5 on SM screens</div>
+    <div class="p-md-5 bg-success">Padding 5 on MD screens</div>
+    <div class="p-lg-5 bg-danger">Padding 5 on LG screens</div>
+    <div class="p-xl-5 bg-primary">Padding 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Padding Top Utilities</h1>
+    <p>Padding top utilities:</p>
+    <div class="pt-0 bg-warning">Padding Top 0</div>
+    <div class="pt-1 bg-success">Padding Top 1</div>
+    <div class="pt-2 bg-danger">Padding Top 2</div>
+    <div class="pt-3 bg-primary">Padding Top 3</div>
+    <div class="pt-4 bg-light">Padding Top 4</div>
+    <div class="pt-5 bg-info">Padding Top 5</div>
+    <br>
+
+    <p>Responsive padding top utilities. Resize the browser window to see the effect:</p>
+    <div class="pt-sm-5 bg-warning">Padding Top 5 on SM screens</div>
+    <div class="pt-md-5 bg-success">Padding Top 5 on MD screens</div>
+    <div class="pt-lg-5 bg-danger">Padding Top 5 on LG screens</div>
+    <div class="pt-xl-5 bg-primary">Padding Top 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Padding Bottom Utilities</h1>
+    <p>Padding bottom utilities:</p>
+    <div class="pb-0 bg-warning">Padding Bottom 0</div>
+    <div class="pb-1 bg-success">Padding Bottom 1</div>
+    <div class="pb-2 bg-danger">Padding Bottom 2</div>
+    <div class="pb-3 bg-primary">Padding Bottom 3</div>
+    <div class="pb-4 bg-light">Padding Bottom 4</div>
+    <div class="pb-5 bg-info">Padding Bottom 5</div>
+    <br>
+
+    <p>Responsive padding bottom utilities. Resize the browser window to see the effect:</p>
+    <div class="pb-sm-5 bg-warning">Padding Bottom 5 on SM screens</div>
+    <div class="pb-md-5 bg-success">Padding Bottom 5 on MD screens</div>
+    <div class="pb-lg-5 bg-danger">Padding Bottom 5 on LG screens</div>
+    <div class="pb-xl-5 bg-primary">Padding Bottom 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Padding Left Utilities</h1>
+    <p>Padding left utilities:</p>
+    <div class="pl-0 bg-warning">Padding Left 0</div>
+    <div class="pl-1 bg-success">Padding Left 1</div>
+    <div class="pl-2 bg-danger">Padding Left 2</div>
+    <div class="pl-3 bg-primary">Padding Left 3</div>
+    <div class="pl-4 bg-light">Padding Left 4</div>
+    <div class="pl-5 bg-info">Padding Left 5</div>
+    <br>
+
+    <p>Responsive padding left utilities. Resize the browser window to see the effect:</p>
+    <div class="pl-sm-5 bg-warning">Padding Left 5 on SM screens</div>
+    <div class="pl-md-5 bg-success">Padding Left 5 on MD screens</div>
+    <div class="pl-lg-5 bg-danger">Padding Left 5 on LG screens</div>
+    <div class="pl-xl-5 bg-primary">Padding Left 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Padding Right Utilities</h1>
+    <p>Padding right utilities:</p>
+    <div class="pr-0 bg-warning text-right">Padding Right 0</div>
+    <div class="pr-1 bg-success text-right">Padding Right 1</div>
+    <div class="pr-2 bg-danger text-right">Padding Right 2</div>
+    <div class="pr-3 bg-primary text-right">Padding Right 3</div>
+    <div class="pr-4 bg-light text-right">Padding Right 4</div>
+    <div class="pr-5 bg-info text-right">Padding Right 5</div>
+    <br>
+
+    <p>Responsive padding right utilities. Resize the browser window to see the effect:</p>
+    <div class="pr-sm-5 bg-warning text-right">Padding Right 5 on SM screens</div>
+    <div class="pr-md-5 bg-success text-right">Padding Right 5 on MD screens</div>
+    <div class="pr-lg-5 bg-danger text-right">Padding Right 5 on LG screens</div>
+    <div class="pr-xl-5 bg-primary text-right">Padding Right 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Padding Top and Bottom Utilities</h1>
+    <p>Padding y utilities:</p>
+    <div class="py-0 bg-warning">Padding Y 0</div>
+    <div class="py-1 bg-success">Padding Y 1</div>
+    <div class="py-2 bg-danger">Padding Y 2</div>
+    <div class="py-3 bg-primary">Padding Y 3</div>
+    <div class="py-4 bg-light">Padding Y 4</div>
+    <div class="py-5 bg-info">Padding Y 5</div>
+    <br>
+
+    <p>Responsive padding y utilities. Resize the browser window to see the effect:</p>
+    <div class="py-sm-5 bg-warning">Padding Y 5 on SM screens</div>
+    <div class="py-md-5 bg-success">Padding Y 5 on MD screens</div>
+    <div class="py-lg-5 bg-danger">Padding Y 5 on LG screens</div>
+    <div class="py-xl-5 bg-primary">Padding Y 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Padding Left and Right Utilities</h1>
+    <p>Padding x utilities:</p>
+    <div class="px-0 bg-warning">Padding X 0</div>
+    <div class="px-1 bg-success">Padding X 1</div>
+    <div class="px-2 bg-danger">Padding X 2</div>
+    <div class="px-3 bg-primary">Padding X 3</div>
+    <div class="px-4 bg-light">Padding X 4</div>
+    <div class="px-5 bg-info">Padding X 5</div>
+    <br>
+
+    <p>Responsive padding x utilities. Resize the browser window to see the effect:</p>
+    <div class="px-sm-5 bg-warning">Padding X 5 on SM screens</div>
+    <div class="px-md-5 bg-success">Padding X 5 on MD screens</div>
+    <div class="px-lg-5 bg-danger">Padding X 5 on LG screens</div>
+    <div class="px-xl-5 bg-primary">Padding X 5 on XL screens</div>
+</div>
+
+<div class="container">
+    <h1>Shadows</h1>
+    <p>Use the shadow-classes to add shadows to an element:</p>
+    <div class="shadow-none p-4 mb-4 bg-light">No shadow</div>
+    <div class="shadow-sm p-4 mb-4 bg-white">Small shadow</div>
+    <div class="shadow p-4 mb-4 bg-white">Default shadow</div>
+    <div class="shadow-lg p-4 mb-4 bg-white">Large shadow</div>
+</div>
+
+<div class="container">
+    <h1>Vertical Align</h1>
+    <p>Change the alignment of elements with the align classes (only works on inline, inline-block, inline-table and table cell elements):</p>
+    <span class="align-baseline">baseline</span>
+    <span class="align-top">top</span>
+    <span class="align-middle">middle</span>
+    <span class="align-bottom">bottom</span>
+    <span class="align-text-top">text-top</span>
+    <span class="align-text-bottom">text-bottom</span>
+</div>
+
+<div class="container mt-3">
+    <h2>Responsive Embed</h2>
+    <p>Create a responsive video and scale it nicely to the parent element.</p>
+
+    <h2>Aspect ratio 1:1</h2>
+    <div class="embed-responsive embed-responsive-1by1">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+    <br>
+
+    <h2>Aspect ratio 4:3</h2>
+    <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+    <br>
+
+    <h2>Aspect ratio 16:9</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+    <br>
+
+    <h2>Aspect ratio 21:9</h2>
+    <div class="embed-responsive embed-responsive-21by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <h1>Visibility</h1>
+    <p>Use the .visible or .invisible classes to control the visibility of elements. Note: These classes do not change the CSS display value. They only add visibility:visible or visibility:hidden to an element:</p>
+    <div class="visible bg-success">I am visible</div>
+    <div class="invisible bg-warning">I am invisible</div>
+</div>
+
+<div class="container">
+    <h1>Close Icon</h1>
+    <p>Use the .close class to style a close icon. This is often used for alerts and modals. Note that we use the times; symbol to create the actual icon (a better lookiong "x"). Also note that it is right-aligned by default:</p>
+    <div class="clearfix">
+        <button type="button" class="close">&times;</button>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <h2>Screen readers</h2>
+    <p>Use the .sr-only class to hide an element on all devices, except screen readers:</p>
+    <span class="sr-only">I will be hidden on all screens except for screen readers.</span>
+</div>
+
+<div class="container">
+    <h2>Contextual Colors</h2>
+    <p>Use the contextual classes to provide "meaning through colors":</p>
+    <p class="text-muted">This text is muted.</p>
+    <p class="text-primary">This text is important.</p>
+    <p class="text-success">This text indicates success.</p>
+    <p class="text-info">This text represents some information.</p>
+    <p class="text-warning">This text represents a warning.</p>
+    <p class="text-danger">This text represents danger.</p>
+    <p class="text-secondary">Secondary text.</p>
+    <p class="text-dark">This text is dark grey.</p>
+    <p class="text-body">Default body color (often black).</p>
+    <p class="text-light">This text is light grey (on white background).</p>
+    <p class="text-white">This text is white (on white background).</p>
+</div>
+
+<div class="container">
+    <h2>Contextual Link Colors</h2>
+    <p>Hover over the links.</p>
+    <a href="#" class="text-muted">Muted link.</a>
+    <a href="#" class="text-primary">Primary link.</a>
+    <a href="#" class="text-success">Success link.</a>
+    <a href="#" class="text-info">Info link.</a>
+    <a href="#" class="text-warning">Warning link.</a>
+    <a href="#" class="text-danger">Danger link.</a>
+    <a href="#" class="text-secondary">Secondary link.</a>
+    <a href="#" class="text-dark">Dark grey link.</a>
+    <a href="#" class="text-body">Body/black link.</a>
+    <a href="#" class="text-light">Light grey link.</a>
+</div>
+
+<div class="container">
+    <h2>Opacity Text Colors</h2>
+    <p>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:</p>
+    <p class="text-black-50">Black text with 50% opacity on white background</p>
+    <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+</div>
+
+<div class="container">
+    <h2>Contextual Backgrounds</h2>
+    <p>Use the contextual background classes to provide "meaning through colors".</p>
+    <p>Note that you can also add a .text-* class if you want a different text color:</p>
+    <p class="bg-primary text-white">This text is important.</p>
+    <p class="bg-success text-white">This text indicates success.</p>
+    <p class="bg-info text-white">This text represents some information.</p>
+    <p class="bg-warning text-white">This text represents a warning.</p>
+    <p class="bg-danger text-white">This text represents danger.</p>
+    <p class="bg-secondary text-white">Secondary background color.</p>
+    <p class="bg-dark text-white">Dark grey background color.</p>
+    <p class="bg-light text-dark">Light grey background color.</p>
+</div>
+
+<div class="container">
+    <h1>Font weight and italics</h1>
+    <p class="font-weight-bold">Bold text.</p>
+    <p class="font-weight-bolder">Bolder text.</p>
+    <p class="font-weight-normal">Normal weight text.</p>
+    <p class="font-weight-light">Light weight text.</p>
+    <p class="font-weight-lighter">Lighter weight text.</p>
+    <p class="font-italic">Italic text.</p>
+</div>
+
+<div class="container">
+    <h1>Display Headings</h1>
+    <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+</div>
+
+<div class="container">
+    <h2>Typography</h2>
+    <p>Use the .lead class to make a paragraph "stand out":</p>
+    <p class="lead">This paragraph stands out.</p>
+    <p>This is a regular paragraph.</p>
+</div>
+
+<div class="container">
+    <h2>Typography</h2>
+    <p>Use the .small class to make the text smaller:</p>
+    <p class="small">This paragraph is smaller.</p>
+    <p>This is a regular paragraph.</p>
+</div>
+
+<div class="container">
+    <h2>Text break / Word break</h2>
+    <p>The .text-break class prevents long text from breaking layout.</p>
+    <p>With .text-break:</p>
+    <p class="text-break">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+    <p>Without .text-break:</p>
+    <p>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+</div>
+
+<div class="container">
+    <h2>Typography</h2>
+    <p class="text-left">Left-aligned text.</p>
+    <p class="text-right">Right-aligned text.</p>
+    <p class="text-center">Center-aligned text.</p>
+    <p class="text-justify">Justified text. Justified text. Justified text. Justified text. Justified text. Justified text.</p>
+    <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+    <p><strong>Tip:</strong> Try to resize the browser window to see the behaviour of justify and nowrap.</p>
+</div>
+
+<div class="container">
+    <h2>Typography</h2>
+    <p>Default text.</p>
+    <p class="text-monospace">Monospaced text.</p>
+</div>
+
+<div class="container">
+    <h2>Typography</h2>
+    <p class="text-lowercase">Lowercased text.</p>
+    <p class="text-uppercase">Uppercased text.</p>
+    <p class="text-capitalize">Capitalized text.</p>
+</div>
+
+<div class="container">
+    <h2>Reset Color</h2>
+    <p>Use the .text-reset class to inherit the color from the parent. For example, a link is blue by default, however, in this example, it inherits the grey, muted color from its parent. Try to remove the class to see the differences.</p>
+    <p class="text-muted">Muted text with a <a href="#" class="text-reset">reset link</a>.</p>
+</div>
+
+<div class="container">
+    <h2>Typography</h2>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. (normal abbr)</p>
+    <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> was founded in 1948. (slightly smaller abbr)</p>
+</div>
+
+<div class="container">
+    <h2>Typography</h2>
+    <p>The class .list-unstyled removes the default list-style and left margin on list items (immediate children only):</p>
+    <ul class="list-unstyled">
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+</div>
+
+<div class="container">
+    <h2>Typography</h2>
+    <p>The class .list-inline places all list items on a single line, when used together with the .list-inline-item:</p>
+    <ul class="list-inline">
+        <li class="list-inline-item">Coffee</li>
+        <li class="list-inline-item">Tea</li>
+        <li class="list-inline-item">Milk</li>
+    </ul>
+</div>
+
+<div class="container">
+    <h2>Code</h2>
+
+    <p>For multiple lines of code, use the pre element:</p>
+    <pre>Text in a pre element
+  is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks.</pre>
+
+    <p>If you add the .pre-scrollable class, the pre element gets a max-height of 340px and provides a y-axis scrollbar:</p>
+    <pre class="pre-scrollable">Text in a pre element
+  is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks.</pre>
+</div>
+
+<div class="container mt-3">
+    <h2>Display Utilities</h2>
+    <p>To create a block element, add the d-block class. Use any of the d-*-block classes to control WHEN the element should be a block element on a specific screen width.</p>
+    <p>Resize the browser window to see the effect.</p>
+    <span class="d-block bg-success">d-block</span>
+    <span class="d-sm-block bg-success">d-sm-block</span>
+    <span class="d-md-block bg-success">d-md-block</span>
+    <span class="d-lg-block bg-success">d-lg-block</span>
+    <span class="d-xl-block bg-success">d-xl-block</span>
+</div>
+
+<div class="container mt-3">
+    <h2>Display None</h2>
+    <p>Use the d-none class to hide an element.</p>
+    <div class="d-none">Hidden DIV</div>
+    <p class="d-none">Hidden P</p>
+</div>
+
+<div class="container mt-3">
+    <h2>Display None Responsive</h2>
+    <p>Use the d-none class to hide an element. Use any of the d-*-none classes to control WHEN the element should be hidden on a specific screen width.</p>
+    <p>Resize the browser window to see the effect.</p>
+    <div class="d-none bg-success">Hidden DIV</div>
+    <div class="d-sm-none bg-success">d-sm-none</div>
+    <div class="d-md-none bg-success">d-md-none</div>
+    <div class="d-lg-none bg-success">d-lg-none</div>
+    <div class="d-none bg-success">d-xl-none</div>
+</div>
+
+<div class="container mt-3">
+    <h2>Display Inline</h2>
+    <p>Use the d-inline class to make an element display inline.</p>
+    <div class="d-inline">Inline DIV.</div>
+    <p class="d-inline">Inline P.</p>
+</div>
+
+<div class="container mt-3">
+    <h2>Display Inline Responsive</h2>
+    <p>Use the d-inline class to make an element display inline. Use any of the d-*-inline classes to control WHEN the element should be inline on a specific screen width.</p>
+    <p>Resize the browser window to see the effect.</p>
+    <div class="d-inline bg-success">Inline DIV</div>
+    <div class="d-sm-inline bg-success">d-sm-inline</div>
+    <div class="d-md-inline bg-success">d-md-inline</div>
+    <div class="d-lg-inline bg-success">d-lg-inline</div>
+    <div class="d-inline bg-success">d-xl-inline</div>
+</div>
+
+<div class="container mt-3">
+    <h2>Display Inline Block</h2>
+    <p>Use the d-inline-block class to make an element display inline block.</p>
+    <div class="d-inline-block">Inline block DIV.</div>
+    <div class="d-inline-block">Inline block DIV.</div>
+</div>
+
+<div class="container mt-3">
+    <h2>Display Inline Block Responsive</h2>
+    <p>Use the d-inline-block class to make an element display inline block. Use any of the d-*-inline-block classes to control WHEN the element should be inline block on a specific screen width.</p>
+    <p>Resize the browser window to see the effect.</p>
+    <div class="d-inline-block bg-success">Inline block DIV</div>
+    <div class="d-sm-inline-block bg-success">d-sm-inline-block</div>
+    <div class="d-md-inline-block bg-success">d-md-inline-block</div>
+    <div class="d-lg-inline-block bg-success">d-lg-inline-block</div>
+    <div class="d-inline-block bg-success">d-xl-inline-block</div>
+</div>
+
+<div class="container mt-3">
+    <h2>Display Table</h2>
+    <p>Use the d-table, d-table-row and d-table-cell to make elements display as tables:</p>
+    <div class="d-table" style="width:100%">
+        <div class="d-table-row" style="width:100%">
+
+            <div class="d-table-cell">
+                <h4>Left Cell</h4>
+                <p>Some text..</p>
+            </div>
+
+            <div class="d-table-cell">
+                <h4>Middle Cell</h4>
+                <p>Some text..</p>
+            </div>
+
+            <div class="d-table-cell">
+                <h4>Right Cell</h4>
+                <p>Some text..</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-3">
+    <h2>Display Table Responsive</h2>
+    <p>Use the d-table, d-table-row and d-table-cell to make elements display as tables.</p>
+    <p>Use any of the sm, md, lg, xl classes (d-*-*) to make an element display as a table on different screen sizes.</p>
+    <p>Resize the browser window to see the effect.</p>
+
+    <h2>DIV as Table</h2>
+    <div class="d-table bg-warning" style="width:100%">
+        <div class="d-table-row" style="width:100%">
+
+            <div class="d-table-cell">
+                <h4>Left Cell</h4>
+                <p>Some text..</p>
+            </div>
+
+            <div class="d-table-cell">
+                <h4>Middle Cell</h4>
+                <p>Some text..</p>
+            </div>
+
+            <div class="d-table-cell">
+                <h4>Right Cell</h4>
+                <p>Some text..</p>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <h2>Responsive Table</h2>
+    <div class="d-md-table bg-success" style="width:100%">
+        <div class="d-md-table-row" style="width:100%">
+
+            <div class="d-md-table-cell">
+                <h4>Left Cell</h4>
+                <p>Some text..</p>
+            </div>
+
+            <div class="d-md-table-cell">
+                <h4>Middle Cell</h4>
+                <p>Some text..</p>
+            </div>
+
+            <div class="d-md-table-cell">
+                <h4>Right Cell</h4>
+                <p>Some text..</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-3">
+    <h2>Flex</h2>
+    <p>To create a flexbox container and transform direct children into flex items, use the d-flex class:</p>
+    <div class="d-flex p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <h2>Flex</h2>
+    <p>To create a flexbox container, add the d-flex class. Use any of the d-*-flex classes to control WHEN the element should be a flex element on a specific screen width.</p>
+    <p>Resize the browser window to see the effect.</p>
+    <div class="d-flex bg-success">d-flex</div>
+    <span class="d-sm-flex bg-success">d-sm-flex</span>
+    <span class="d-md-flex bg-success">d-md-flex</span>
+    <span class="d-lg-flex bg-success">d-lg-flex</span>
+    <span class="d-xl-flex bg-success">d-xl-flex</span>
+</div>
+
+<div class="container mt-3">
+    <h2>Inline Flex</h2>
+    <p>To create an inline flexbox container, use the d-inline-flex class:</p>
+    <div class="d-inline-flex p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <h2>Inline Flex</h2>
+    <p>To create an inline flexbox container, add the d-inline-flex class. Use any of the d-*-inline-flex classes to control WHEN the element should be a flex element on a specific screen width.</p>
+    <p>Resize the browser window to see the effect.</p>
+    <div class="d-inline-flex bg-success">d-flex</div>
+    <div class="d-sm-inline-flex bg-success">d-sm-flex</div>
+    <div class="d-md-inline-flex bg-success">d-md-flex</div>
+    <div class="d-lg-inline-flex bg-success">d-lg-flex</div>
+    <div class="d-xl-inline-flex bg-success">d-xl-flex</div>
+</div>
+
+</body>
+</html>
