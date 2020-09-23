@@ -4098,75 +4098,771 @@ line breaks.
       });
     </script>
 
-    <!--    <div class="jumbotron text-center" style="margin-bottom:0">-->
-<!--        <h1>My First Bootstrap 4 Page</h1>-->
-<!--        <p>Resize this responsive page to see the effect!</p>-->
-<!--    </div>-->
+    <div class="container mt-3">
+        <h2>Flex</h2>
+        <p>To create a flexbox container and transform direct children into flex items, use the d-flex class:</p>
+        <div class="d-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
 
-<!--    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">-->
-<!--        <a class="navbar-brand" href="#">Navbar</a>-->
-<!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">-->
-<!--            <span class="navbar-toggler-icon"></span>-->
-<!--        </button>-->
-<!--        <div class="collapse navbar-collapse" id="collapsibleNavbar">-->
-<!--            <ul class="navbar-nav">-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="#">Link</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="#">Link</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="#">Link</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </nav>-->
+    <div class="container mt-3">
+        <h2>Inline Flex</h2>
+        <p>To create an inline flexbox container, use the d-inline-flex class:</p>
+        <div class="d-inline-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
 
-<!--    <div class="container" style="margin-top:30px">-->
-<!--        <div class="row">-->
-<!--            <div class="col-sm-4">-->
-<!--                <h2>About Me</h2>-->
-<!--                <h5>Photo of me:</h5>-->
-<!--                <div class="fakeimg">Fake Image</div>-->
-<!--                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>-->
-<!--                <h3>Some Links</h3>-->
-<!--                <p>Lorem ipsum dolor sit ame.</p>-->
-<!--                <ul class="nav nav-pills flex-column">-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link active" href="#">Active</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">Link</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">Link</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link disabled" href="#">Disabled</a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--                <hr class="d-sm-none">-->
-<!--            </div>-->
-<!--            <div class="col-sm-8">-->
-<!--                <h2>TITLE HEADING</h2>-->
-<!--                <h5>Title description, Dec 7, 2017</h5>-->
-<!--                <div class="fakeimg">Fake Image</div>-->
-<!--                <p>Some text..</p>-->
-<!--                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>-->
-<!--                <br>-->
-<!--                <h2>TITLE HEADING</h2>-->
-<!--                <h5>Title description, Sep 2, 2017</h5>-->
-<!--                <div class="fakeimg">Fake Image</div>-->
-<!--                <p>Some text..</p>-->
-<!--                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="container mt-3">
+        <h2>Horizontal Direction</h2>
+        <p>Use .flex-row to make the flex items appear side by side (default):</p>
+        <div class="d-flex flex-row bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <p>Use .flex-row-reverse to right-align the direction:</p>
+        <div class="d-flex flex-row-reverse bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
 
-<!--    <div class="jumbotron text-center" style="margin-bottom:0">-->
-<!--        <p>Footer</p>-->
-<!--    </div>-->
+    <div class="container mt-3">
+        <h2>Vertical Direction</h2>
+        <p>Use .flex-column to display the flex items vertically (on top of each other):</p>
+        <div class="d-flex flex-column mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <p>Use .flex-column-reverse to reverse the vertical direction:</p>
+        <div class="d-flex flex-column-reverse">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Justify content</h2>
+        <p>Use the .justify-content-* classes to change the alignment of flex items. Choose from start (default), end, center, between or around:</p>
+        <div class="d-flex justify-content-start bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-end bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-center bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-between bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-around bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Fill / Equal Widths</h2>
+        <p>Use .flex-fill on flex items to force them into equal widths:</p>
+        <div class="d-flex mb-3">
+            <div class="p-2 flex-fill bg-info">Flex item 1</div>
+            <div class="p-2 flex-fill bg-warning">Flex item 2</div>
+            <div class="p-2 flex-fill bg-primary">Flex item 3</div>
+        </div>
+        <p>Example without .flex-fill:</p>
+        <div class="d-flex mb-3 bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Grow</h2>
+        <p>Use .flex-grow-1 on a flex item to take up the rest of the space:</p>
+        <div class="d-flex mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 flex-grow-1 bg-primary">Flex item 3</div>
+        </div>
+        <p>Example without .flex-grow-1:</p>
+        <div class="d-flex mb-3 bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Order</h2>
+        <p>Change the visual order of a specific flex item(s) with the .order classes. Valid classes are from 0 to 12:</p>
+        <div class="d-flex mb-3">
+            <div class="p-2 order-3 bg-info">Flex item 1</div>
+            <div class="p-2 order-2 bg-warning">Flex item 2</div>
+            <div class="p-2 order-1 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Auto Margins</h2>
+        <p>Easily add auto margins to flex items with .mr-auto (push items to the right), or by using .ml-auto (push items to the left):</p>
+        <div class="d-flex mb-3 bg-secondary">
+            <div class="p-2 mr-auto bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex mb-3 bg-secondary">
+            <div class="p-2  bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 ml-auto bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Wrap</h2>
+        <p>Control how flex items wrap in a flex container with .flex-nowrap (default), .flex-wrap or .flex-wrap-reverse.</p>
+        <p><code>.flex-wrap:</code></p>
+        <div class="d-flex flex-wrap bg-light">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p><code>.flex-wrap-reverse:</code></p>
+        <div class="d-flex flex-wrap-reverse bg-light">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p><code>.flex-nowrap:</code></p>
+        <div class="d-flex flex-nowrap bg-light">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+            <div class="p-2 border">Flex item 26</div>
+            <div class="p-2 border">Flex item 27</div>
+            <div class="p-2 border">Flex item 28</div>
+            <div class="p-2 border">Flex item 29</div>
+            <div class="p-2 border">Flex item 30</div>
+            <div class="p-2 border">Flex item 31</div>
+            <div class="p-2 border">Flex item 32</div>
+            <div class="p-2 border">Flex item 33</div>
+            <div class="p-2 border">Flex item 34</div>
+            <div class="p-2 border">Flex item 35</div>
+        </div>
+        <br>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Align Content</h2>
+        <p>Control the vertical alignment of gathered flex items with the .align-content-* classes.</p>
+        <p><strong>Note:</strong> This example does not look good on a small devices. Also note that these classes have no effect on single rows of flex items.</p>
+        <p>.align-content-start (default):</p>
+        <div class="d-flex flex-wrap align-content-start bg-light" style="height:300px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p>.align-content-end:</p>
+        <div class="d-flex flex-wrap align-content-end bg-light" style="height:300px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p>.align-content-center:</p>
+        <div class="d-flex flex-wrap align-content-center bg-light" style="height:300px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p>.align-content-around:</p>
+        <div class="d-flex flex-wrap align-content-around bg-light" style="height:300px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+        <p>.align-content-stretch:</p>
+        <div class="d-flex flex-wrap align-content-stretch bg-light" style="height:300px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+            <div class="p-2 border">Flex item 4</div>
+            <div class="p-2 border">Flex item 5</div>
+            <div class="p-2 border">Flex item 6</div>
+            <div class="p-2 border">Flex item 7</div>
+            <div class="p-2 border">Flex item 8</div>
+            <div class="p-2 border">Flex item 9</div>
+            <div class="p-2 border">Flex item 10</div>
+            <div class="p-2 border">Flex item 11</div>
+            <div class="p-2 border">Flex item 12</div>
+            <div class="p-2 border">Flex item 13 </div>
+            <div class="p-2 border">Flex item 14</div>
+            <div class="p-2 border">Flex item 15</div>
+            <div class="p-2 border">Flex item 16</div>
+            <div class="p-2 border">Flex item 17</div>
+            <div class="p-2 border">Flex item 18</div>
+            <div class="p-2 border">Flex item 19</div>
+            <div class="p-2 border">Flex item 20</div>
+            <div class="p-2 border">Flex item 21</div>
+            <div class="p-2 border">Flex item 22</div>
+            <div class="p-2 border">Flex item 23</div>
+            <div class="p-2 border">Flex item 24</div>
+            <div class="p-2 border">Flex item 25</div>
+        </div>
+        <br>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Align Items</h2>
+        <p>Control the vertical alignment of single rows of flex items with the .align-content-* classes.</p>
+        <p>.align-items-start:</p>
+        <div class="d-flex align-items-start bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-items-end:</p>
+        <div class="d-flex align-items-end bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-items-center:</p>
+        <div class="d-flex align-items-center bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-items-baseline:</p>
+        <div class="d-flex align-items-baseline bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-items-stretch (default):</p>
+        <div class="d-flex align-items-stretch bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Align Self</h2>
+        <p>Control the vertical alignment of a specific flex item with the .align-self-* classes.</p>
+        <p>.align-self-start:</p>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border align-self-start">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-self-end:</p>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border align-self-end">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-self-center:</p>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border align-self-center">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-self-baseline:</p>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border align-self-baseline">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+        <p>.align-self-stretch (default):</p>
+        <div class="d-flex bg-light" style="height:150px">
+            <div class="p-2 border">Flex item 1</div>
+            <div class="p-2 border align-self-stretch">Flex item 2</div>
+            <div class="p-2 border">Flex item 3</div>
+        </div>
+        <br>
+    </div>
+
+    <div class="container-fluid">
+        <h1>Basic Grid Structure</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <p>The first, second and third row will automatically stack on top of each other when the screen is less than 576px wide.</p>
+
+        <div class="container-fluid">
+            <!-- Control the column width, and how they should appear on different devices -->
+            <div class="row">
+                <div class="col-sm-6" style="background-color:yellow;">50%</div>
+                <div class="col-sm-6" style="background-color:orange;">50%</div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">33.33%</div>
+                <div class="col-sm-4" style="background-color:orange;">33.33%</div>
+                <div class="col-sm-4" style="background-color:yellow;">33.33%</div>
+            </div>
+            <br>
+
+            <!-- Or let Bootstrap automatically handle the layout -->
+            <div class="row">
+                <div class="col-sm" style="background-color:yellow;">25%</div>
+                <div class="col-sm" style="background-color:orange;">25%</div>
+                <div class="col-sm" style="background-color:yellow;">25%</div>
+                <div class="col-sm" style="background-color:orange;">25%</div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col" style="background-color:yellow;">25%</div>
+                <div class="col" style="background-color:orange;">25%</div>
+                <div class="col" style="background-color:yellow;">25%</div>
+                <div class="col" style="background-color:orange;">25%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Grid Example</h1>
+        <p>This example demonstrates a 50%/50% split on small, medium, large and xlarge devices. On extra small devices, it will stack (100% width).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 bg-success">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="col-sm-6 bg-warning">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1>Grid Example</h1>
+        <p>This example demonstrates a 50%/50% split on small, medium, large and xlarge devices. On extra small devices, it will stack (100% width).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 bg-success">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="col-sm-6 bg-warning">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1>Auto Layout Columns</h1>
+        <p>In Bootstrap 4, there is an easy way to create equal width columns: just use the <code>.col-size</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
+        <p>Two columns: 50% width on all screens, except for extra small (100% width on screens less than <strong>576px</strong> wide)</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm bg-success">1 of 2</div>
+                <div class="col-sm bg-warning">2 of 2</div>
+            </div>
+        </div>
+        <br>
+
+        <p>Four columns: 25% width on all screens, except for extra small (100% width on screens less than <strong>576px</strong> wide)</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm bg-success">1 of 4</div>
+                <div class="col-sm bg-warning">2 of 4</div>
+                <div class="col-sm bg-success">3 of 4</div>
+                <div class="col-sm bg-warning">4 of 4</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1>Extra Small Grid</h1>
+        <p>The following example will result in a 25%/75% split on all devices.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 bg-success">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="col-9 bg-warning">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1>Extra Small Grid</h1>
+        <p>The following example will result in a 33.3%/66.6% split on all devices.</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 bg-success">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="col-8 bg-warning">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <p>This example will result in a 50%/50% split on all devices.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 bg-success">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="col-6 bg-warning">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1>Auto Layout Columns</h1>
+        <p>In Bootstrap 4, there is an easy way to create equal width columns for all devices: just use the <code>.col</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col bg-success">1 of 2</div>
+                <div class="col bg-warning">2 of 2</div>
+            </div>
+        </div>
+        <br>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col bg-success">1 of 4</div>
+                <div class="col bg-warning">2 of 4</div>
+                <div class="col bg-success">3 of 4</div>
+                <div class="col bg-warning">4 of 4</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h2>Row Cols</h2>
+        <p>The .row-cols-* classes are used to set the number of columns that should appear next to each other.</p>
+
+        <div class="row row-cols-1">
+            <div class="col bg-success">1 of 2</div>
+            <div class="col bg-warning">2 of 2</div>
+        </div>
+        <br>
+        <div class="row row-cols-2">
+            <div class="col bg-success">1 of 4</div>
+            <div class="col bg-warning">2 of 4</div>
+            <div class="col bg-success">3 of 4</div>
+            <div class="col bg-warning">4 of 4</div>
+        </div>
+        <br>
+        <div class="row row-cols-3">
+            <div class="col bg-success">1 of 6</div>
+            <div class="col bg-warning">2 of 6</div>
+            <div class="col bg-success">3 of 6</div>
+            <div class="col bg-warning">4 of 6</div>
+            <div class="col bg-success">5 of 6</div>
+            <div class="col bg-warning">6 of 6</div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h2>Nested Columns</h2>
+        <p>Add columns inside other columns:</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8 bg-warning">
+                .col-8
+                <div class="row">
+                    <div class="col-6 bg-light">.col-6</div>
+                    <div class="col-6 bg-secondary">.col-6</div>
+                </div>
+            </div>
+            <div class="col-4 bg-success">.col-4</div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1>No Gutters</h1>
+        <p>Add the .no-gutters class to the .row container to remove gutters (extra space):</p>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-3 bg-success">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="col-9 bg-warning">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>My First Bootstrap 4 Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar1">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg">Fake Image</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <h3>Some Links</h3>
+                <p>Lorem ipsum dolor sit ame.</p>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeimg">Fake Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <br>
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg">Fake Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <p>Footer</p>
+    </div>
 
     </body>
 </html>
